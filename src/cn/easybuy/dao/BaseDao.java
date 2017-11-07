@@ -14,7 +14,7 @@ import cn.easybuy.util.DatabaseUtil;
  */
 public class BaseDao {
 	
-	  private Connection conn;
+	  private Connection conn  ;
 	    
 	    public BaseDao(Connection conn) {
 	        this.conn = conn;
