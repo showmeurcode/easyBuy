@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name></display-name>
+  <welcome-file-list>
+    <welcome-file>/pre/index.jsp</welcome-file>
+  </welcome-file-list>
+  <filter>
+    <filter-name>CharacterEncodingFilter</filter-name>
+    <filter-class>cn.easybuy.filter.CharacterEncodingFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>CharacterEncodingFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+  <servlet>
+  	<servlet-name>ProductServlet</servlet-name>
+  	<servlet-class>cn.easybuy.servlet.pre.ProductServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <display-name>订单相关</display-name>
+    <servlet-name>OrderServlet</servlet-name>
+    <servlet-class>cn.easybuy.servlet.pre.OrderServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>地址相关</description>
+    <display-name>订单相关</display-name>
+    <servlet-name>UserAddressServlet</servlet-name>
+    <servlet-class>cn.easybuy.servlet.pre.UserAddressServlet</servlet-class>
+  </servlet>
+
+
+  
+  <servlet-mapping>
+  	<servlet-name>ProductServlet</servlet-name>
+  	<url-pattern>/ProductServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderServlet</servlet-name>
+    <url-pattern>/OrderServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserAddressServlet</servlet-name>
+    <url-pattern>/UserAddressServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
