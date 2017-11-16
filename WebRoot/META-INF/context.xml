@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Context>
 	<Resource name="jdbc/easybuy" auth="Container" type="javax.sql.DataSource"
-		maxActive="100" maxIdle="30" maxWait="10000" username="root" password="root"
+		maxActive="100" maxIdle="30" maxWait="10000" username="root" password="BDQNbdqn123"
 		driverClassName="com.mysql.jdbc.Driver"
-		 url="jdbc:mysql://101.132.121.9:3306/easybuy?useUnicode=true&amp;characterEncoding=utf-8" />
+		 url="jdbc:mysql://rm-uf6d4t5k1uzy0r34ko.mysql.rds.aliyuncs.com:3306/easybuy?useUnicode=true&amp;characterEncoding=utf-8" />
 	<!-- <WatchedResource>WEB-INF/web.xml</WatchedResource>  在tomcat中才需要这行-->
 </Context> 
