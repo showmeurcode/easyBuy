@@ -1,7 +1,7 @@
 # easyBuy
 ####一个简单的javabean+servlet+jsp实现，作为练习.
 
-网页地址：http://101.132.121.9:8080/easyBuy/。<br>
+网页地址：http://101.132.121.9:8080/easyBuy/<br>
 测试账号：yinxiaochen   123456<br>
 功能：<br>
 1.登录（可选择是否记住密码），注册，注销<br>
